@@ -31,6 +31,7 @@
   --color-box-shadow-darkfour: #00000010;
   --color-box-shadow-darkeys: #00000020;
   --color-box-shadow-darkdoor: #00000014;
+  --color-box-shadow-darknice: #00000026;
 }
 * {
   padding: 0;
@@ -787,4 +788,53 @@ body {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.form {
+  position: relative;
+  display: flex;
+  padding-top: 12px;
+  text-align: center;
+}
+.input {
+  position: absolute;
+  margin-top: 12px;
+}
+.label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.title-modal {
+  position: absolute;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 40px 40px 12px;
+}
+.btn-submit {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 10px 76px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-font-snow);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: var(--color-background-skylight);
+  box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
+  border-radius: 4px;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  position: absolute;
+  background-color: var(--color-background-skylight);
+  cursor: pointer;
 }
