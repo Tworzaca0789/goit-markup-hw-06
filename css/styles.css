@@ -798,7 +798,7 @@ body {
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 40px;
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -864,13 +864,21 @@ body {
   position: absolute;
   width: 16;
   height: 15;
-  margin-bottom: 30px;
   color: var(--color-font-wood);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   gap: 8px;
-  fill: var(--color-icon-darknight);
+}
+.icon-label-checkbox {
+  fill: var(--color-icon-snow);
+  border-radius: 2px;
+  width: 16px;
+  height: 15px;
+}
+.icon-label-checkbox:hover,
+.icon-label-checkbox:focus {
+  background-color: var(--color-icon-sky);
 }
 .label-checkbox {
   color: var(--color-font-sky);
@@ -890,14 +898,17 @@ body {
 .btn-submit {
   display: flex;
   position: absolute;
+  left: 0;
+  bottom: -100px;
   width: 200px;
   height: 50px;
   margin: 30px 164px 40px;
   background-color: var(--color-background-skylight);
-  box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
 }
 .btn-submit:hover,
 .btn-submit:focus {
+  position: absolute;
   background-color: var(--color-background-skylight);
 }
