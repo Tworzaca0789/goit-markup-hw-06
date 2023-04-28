@@ -436,60 +436,85 @@
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
           </svg>
         </button>
-        <form class="form-container" name="contact_form">
-          <p class="title-modal">Zostaw swoje dane w formularzu poniżej</p>
-          <label class="lable-contact" for="firstname"
-            >Imię
-            <input class="input-label" type="text" name="name" id="firstname" />
-            <svg class="icon-label" width="18" height="18">
-              <use
-                href="./images/icons.svg#icon-person-black-18dp-1-1"
-              ></use></svg
-          ></label>
-          <label class="lable-contact" for="user_phone"
-            >Telefon
-            <input
-              class="input-label"
-              type="tel"
-              name="phone"
-              id="user_phone" />
-            <svg class="icon-label" width="18" height="18">
-              <use
-                href="./images/icons.svg#icon-phone-black-18dp-1-1"
-              ></use></svg
-          ></label>
-          <label class="lable-contact" for="user_email"
-            >Email
-            <input
-              class="input-label"
-              type="email"
-              name="email"
-              id="user_email" />
-            <svg class="icon-label" width="18" height="18">
-              <use
-                href="./images/icons.svg#icon-email-black-18dp-1-1"
-              ></use></svg
-          ></label>
-          <label class="lable-contact">
-            Komentarz
-            <textarea
-              class="textarea-label"
-              name="comment"
-              rows="8"
-              placeholder="Wprowadź tekst"
-            ></textarea>
-          </label>
-          <label class="checkbox-privacy"
-            ><svg class="icon-label-checkbox" width="11" height="8">
-              <use href="./images/icons.svg#icon-Vector-2-1"></use>
-            </svg>
-            <input type="checkbox" name="statute" value="true" /> Oświadczam iż
-            akceptuję <a href="#" class="label-checkbox">Regulamin</a> i
-            <a href="#" class="label-checkbox">Politykę Prywatności.</a>
-          </label>
-          <button class="btn-submit" typ="submit">
-            <span class="btn-clic">Wyślij</span>
-          </button>
+
+        <form name="contact_form">
+          <div class="form-container">
+            <p class="title-modal">Zostaw swoje dane w formularzu poniżej</p>
+            <div class="label-box">
+              <label class="label-contact" for="firstname"
+                >Imię
+                <input
+                  class="input-label"
+                  type="text"
+                  name="name"
+                  id="firstname" />
+                <svg class="icon-label" width="12" height="12">
+                  <use
+                    href="./images/icons.svg#icon-person-black-18dp-1-1"
+                  ></use></svg
+              ></label>
+            </div>
+            <div class="label-box">
+              <label class="label-contact" for="user_phone"
+                >Telefon
+                <input
+                  class="input-label"
+                  type="tel"
+                  name="phone"
+                  id="user_phone" />
+                <svg class="icon-label" width="13" height="13">
+                  <use
+                    href="./images/icons.svg#icon-phone-black-18dp-1-1"
+                  ></use></svg
+              ></label>
+            </div>
+            <div class="label-box">
+              <label class="label-contact" for="user_email"
+                >Email
+                <input
+                  class="input-label"
+                  type="email"
+                  name="email"
+                  id="user_email" />
+                <svg class="icon-label" width="15" height="12">
+                  <use
+                    href="./images/icons.svg#icon-email-black-18dp-1-1"
+                  ></use></svg
+              ></label>
+            </div>
+            <div class="label-box">
+              <label class="label-contact"
+                >Komentarz
+                <textarea
+                  class="textarea-label"
+                  name="comment"
+                  rows="8"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </label>
+            </div>
+            <div class="checkbok-place">
+              <label class="checkbox-privacy"
+                ><svg class="icon-label-checkbox" width="11" height="8">
+                  <use href="./images/icons.svg#icon-Vector-3-1"></use>
+                </svg>
+                <input
+                  type="checkbox"
+                  name="statute"
+                  value="true"
+                  class="input-checkbox"
+                />
+                Oświadczam iż akceptuję
+                <a href="#" class="label-checkbox">Regulamin</a> i
+                <a href="#" class="label-checkbox">Politykę Prywatności.</a>
+              </label>
+            </div>
+            <div class="button-nice">
+              <button class="btn-submit" typ="submit">
+                <span class="btn-clic">Wyślij</span>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>

@@ -13,6 +13,7 @@
   --color-font-eclipse: rgba(255, 255, 255, 0.6);
   --color-border-white: #eeeeee;
   --color-border-eys: #ececec;
+  --color-border-sky: #2196f3;
   --color-border-dark: rgba(33, 33, 33, 0.2);
   --color-background-bag: #e5e5e5;
   --color-background-snow: #ffffff;
@@ -793,7 +794,6 @@ body {
   pointer-events: none;
 }
 .form-container {
-  position: relative;
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
@@ -811,38 +811,36 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
-.lable-contact {
+.label-box {
   position: relative;
-  display: block;
+  display: flex;
   flex-direction: column;
-  align-content: center;
+}
+.label-contact {
+  position: relative;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--color-font-wood);
+  display: block;
 }
 .input-label {
   position: relative;
-  display: flex;
+  padding-left: 42px;
   width: 448px;
   height: 40px;
-  border: 1px solid var(--color-border-dark);
+  border: 1px solid var(--color-box-shadow-dark);
   border-radius: 4px;
+  display: inline-block;
   margin-top: 4px;
   margin-bottom: 10px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .icon-label {
   position: absolute;
-  top: 16px;
   left: 3px;
-  display: flex;
-  fill: var(--color-icon-darknight);
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 15px;
+  margin: 13px 12px;
+  width: 18px;
+  height: 18px;
 }
 .textarea-label {
   position: relative;
@@ -855,33 +853,48 @@ body {
   border: 1px solid var(--color-border-dark);
   border-radius: 4px;
   margin-top: 4px;
-  margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;
   color: var(--color-font-wooddark);
 }
+.checkbok-place {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
 .checkbox-privacy {
   position: absolute;
-  width: 16;
-  height: 15;
   color: var(--color-font-wood);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  gap: 8px;
+  gap: 7px;
 }
 .icon-label-checkbox {
   fill: var(--color-icon-snow);
-  border-radius: 2px;
+  border: 0.2px solid var(--color-background-snow);
   width: 16px;
   height: 15px;
+  background-color: var(--color-background-skylight);
+  border-radius: 2px;
+  position: relative;
+  gap: 7px;
+  cursor: pointer;
 }
-.icon-label-checkbox:hover,
-.icon-label-checkbox:focus {
-  background-color: var(--color-icon-sky);
+.input-checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 .label-checkbox {
   color: var(--color-font-sky);
+}
+.button-nice {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  display: flex;
 }
 .btn-clic {
   position: absolute;
@@ -905,10 +918,11 @@ body {
   margin: 30px 164px 40px;
   background-color: var(--color-background-skylight);
   border-radius: 4px;
+  border: none;
   box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
 }
-.btn-submit:hover,
-.btn-submit:focus {
-  position: absolute;
-  background-color: var(--color-background-skylight);
+
+.btn-clic:hover,
+.btn-clic:focus .btn-submit {
+  background: var(--color-background-skylight);
 }
