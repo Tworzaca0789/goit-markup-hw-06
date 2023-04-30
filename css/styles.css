@@ -842,7 +842,7 @@ body {
   fill: var(--color-icon-snow);
 }
 .backdrop {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -866,7 +866,6 @@ body {
     0px 1px 1px var(--color-box-shadow-darkdoor),
     0px 2px 1px var(--color-box-shadow-darkeys);
   border-radius: 4px;
-  cursor: pointer;
 }
 .is-hidden .modal {
   transform: rotate(45deg);
@@ -882,10 +881,19 @@ body {
   background-color: var(--color-background-snow);
   padding: 6px;
   border-radius: 50%;
+  z-index: 1;
 }
 .close-btn:hover {
-  fill: #2196f3;
+  fill: var(--color-icon-sky);
+  border-color: var(--color-border-sky);
+  background-color: aquamarine;
   cursor: pointer;
+}
+.close-btn {
+  transition-property: fill, border-color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .is-hidden {
   visibility: hidden;
@@ -998,8 +1006,10 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  display: inline-block;
-  column-gap: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
 }
 .input-checkbox {
   position: absolute;
@@ -1014,7 +1024,7 @@ body {
   height: 15px;
   border-radius: 2px;
   position: relative;
-  top: 3px;
+  top: 0;
   bottom: 0;
   margin: 0;
   cursor: pointer;
