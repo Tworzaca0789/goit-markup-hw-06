@@ -425,6 +425,7 @@
               </ul>
             </div>
           </div>
+
           <form>
             <div class="newsletter-container">
               <div class="label-newsletter">
@@ -460,56 +461,71 @@
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
           </svg>
         </button>
+
         <form name="contact_form">
           <div class="form-container">
-            <p class="title-modal">Zostaw swoje dane w formularzu poniżej</p>
+            <div>
+              <p class="title-modal">Zostaw swoje dane w formularzu poniżej</p>
+            </div>
             <div class="label-box">
               <label class="label-contact" for="firstname">Imię</label>
-              <input
-                class="input-label"
-                type="text"
-                name="name"
-                id="firstname"
-              />
-              <svg class="icon-label" width="12" height="12">
-                <use href="./images/icons.svg#icon-person-black-18dp-1-1"></use>
-              </svg>
+              <label class="input-label"
+                ><svg class="icon-label" width="18" height="18">
+                  <use
+                    href="./images/icons.svg#icon-person-black-18dp-1-1"
+                  ></use>
+                </svg>
+                <input
+                  class="input-look"
+                  type="text"
+                  name="name"
+                  id="firstname"
+                />
+              </label>
             </div>
             <div class="label-box">
               <label class="label-contact" for="user_phone">Telefon</label>
-              <input
-                class="input-label"
-                type="tel"
-                name="phone"
-                id="user_phone"
-              />
-              <svg class="icon-label" width="13" height="13">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
-              </svg>
+              <label class="input-label"
+                ><svg class="icon-label" width="18" height="18">
+                  <use
+                    href="./images/icons.svg#icon-phone-black-18dp-1-1"
+                  ></use>
+                </svg>
+                <input
+                  class="input-look"
+                  type="tel"
+                  name="phone"
+                  id="user_phone"
+                />
+              </label>
             </div>
             <div class="label-box">
               <label class="label-contact" for="user_email">Email</label>
-              <input
-                class="input-label"
-                type="email"
-                name="email"
-                id="user_email"
-              />
-              <svg class="icon-label" width="15" height="12">
-                <use href="./images/icons.svg#icon-email-black-18dp-1-1"></use>
-              </svg>
+              <label class="input-label"
+                ><svg class="icon-label" width="18" height="18">
+                  <use
+                    href="./images/icons.svg#icon-email-black-18dp-1-1"
+                  ></use>
+                </svg>
+                <input
+                  class="input-look"
+                  type="email"
+                  name="email"
+                  id="user_email"
+                />
+              </label>
             </div>
             <div class="label-box">
               <label class="label-contact"
-                >Komentarz
-                <textarea
-                  class="textarea-label"
+                >Komentarz<textarea
+                  class="input-look-textarea"
                   name="comment"
                   rows="8"
                   placeholder="Wprowadź tekst"
                 ></textarea>
               </label>
             </div>
+
             <div class="checkbok-place">
               <label class="checkbox-privacy">
                 <input
@@ -517,13 +533,16 @@
                   name="statute"
                   value="true"
                   class="input-checkbox"
-                /><svg class="icon-label-checkbox" width="11" height="8">
+                />
+                <svg class="icon-label-checkbox" width="11" height="8">
                   <use href="./images/icons.svg#icon-Vector-3-1"></use>
                 </svg>
                 Oświadczam iż akceptuję
                 <a href="#" class="label-checkbox">Regulamin</a> i
-                <a href="#" class="label-checkbox">Politykę Prywatności.</a>
-              </label>
+                <a href="#" class="label-checkbox"
+                  >Politykę Prywatności.</a
+                ></label
+              >
             </div>
             <div class="button-nice">
               <button class="btn-submit" typ="submit">
