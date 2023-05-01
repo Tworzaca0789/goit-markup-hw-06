@@ -968,15 +968,19 @@ body {
 .input-look-textarea:is(:hover, :focus) {
   border-color: var(--color-border-sky);
   cursor: pointer;
+  border-radius: 13px;
 }
 .input-look-textarea {
-  transition-property: border-color;
+  transition-property: border-color, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
 .input-look-textarea::placeholder {
-  color: #75757580;
+  color: var(--color-font-wooddark);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 .input-look-textarea {
   position: relative;
@@ -988,9 +992,6 @@ body {
   padding: 12px 16px;
   resize: none;
   display: flex;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   color: var(--color-font-wooddark);
   outline: none;
 }
